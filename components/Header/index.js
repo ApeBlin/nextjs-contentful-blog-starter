@@ -10,6 +10,7 @@ export default function Header() {
 
   return (
     <header className={HeaderStyles.header}>
+      <nav className={HeaderStyles.header__nav} role="navigation">
       <div className={HeaderStyles.header__logoContainer}>
         <Link href="/">
           <a
@@ -20,7 +21,6 @@ export default function Header() {
           </a>
         </Link>
       </div>
-      <nav className={HeaderStyles.header__nav} role="navigation">
         <ul className={HeaderStyles.header__navList}>
           {Config.menuLinks.map((link) => {
             const onBlogPost =

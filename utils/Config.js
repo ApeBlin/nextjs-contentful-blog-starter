@@ -52,12 +52,20 @@ export const Config = {
   },
   menuLinks: [
     {
-      displayName: "Home",
+      displayName: "Kerhot",
       path: "/",
     },
     {
-      displayName: "Blog",
+      displayName: "Synttärit",
+      path: "/",
+    },
+    {
+      displayName: "Tapahtumat",
       path: "/blog",
+    },
+    {
+      displayName: "Yhteystiedot",
+      path: "/",
     },
   ],
 };

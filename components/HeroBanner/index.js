@@ -43,6 +43,13 @@ export default function HeroBanner(props) {
             </Link>
           </div>
         )}
+        {internalLink && ctaText && (
+          <div className={HeroBannerStyles.heroBanner__ctaContainer}>
+            <Link href={internalLink}>
+              <a className={ButtonStyles.button}>{ctaText}</a>
+            </Link>
+          </div>
+        )}
         {externalLink && ctaText && (
           <div className={HeroBannerStyles.heroBanner__ctaContainer}>
             <a
